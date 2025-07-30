@@ -1,0 +1,45 @@
+* {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.main p {
+  color: #444;
+}
+
+.main > h2 {
+  color: #2a7ae2;
+  position: relative;
+}
+
+.main > h2::before {
+  content: "★ ";
+  color: #e2572f;
+}
+
+.main > h2 + p {
+  font-style: italic;
+}
+
+.lead ~ p {
+  margin-top: 16px;
+}
+
+div span:first-child {
+  font-weight: bold;
+}
+
+div span:nth-child(even) {
+  color: #008080;
+}
+
+input[type="text"] {
+  border: 2px solid #ccc;
+  padding: 8px;
+}
+
+input[type="password"]:focus {
+  border-color: #e2572f;
+  outline: none;
+}

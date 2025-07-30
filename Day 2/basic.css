@@ -1,0 +1,15 @@
+/* All elements of the website will have a family font of arial */
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#special{
+    border: 2px solid black;
+}
+
+/* This code changes the padding and background-color of the div components */
+div{
+    padding: 10px;
+    background-color: blueviolet;
+}
+

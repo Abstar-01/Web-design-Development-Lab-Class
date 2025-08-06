@@ -1,0 +1,40 @@
+.one{
+    background-color: red;
+    width: 100%;
+    display: flex;
+    color: white;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+}
+
+.two{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    height: 400px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    gap: 20px;
+}
+
+.w1, .w2{
+    background-color: rgb(19, 228, 228);
+    height: 100px;
+    
+}
+
+.nav{
+    width: 100px;
+    background-color: darkblue;
+
+}
+
+.three{
+    background-color: darkblue;
+    width: 100%;
+    display: flex;
+    color: white;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+}

@@ -1,0 +1,16 @@
+.blog-container{
+    display: flexbox;
+    flex-direction: row;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.blog-container{
+    background-color: lightblue;
+}
+
+.blog-container h1{
+    font-size: 18px;
+    font-weight: bold;
+}
+

@@ -1,0 +1,33 @@
+.pricing-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2, 150px);
+}
+
+.grid-pricing{
+    gap: 10px;
+}
+
+.prices1{
+    background-color: lightblue;
+    font-size: 16px;
+    text-align: center;
+}
+
+.prices2{
+    background-color: lightgreen;
+    font-size: 16px;
+    text-align: center;
+}
+
+.prices3{
+    background-color: lightcoral;
+    font-size: 16px;
+    text-align: center;
+}
+
+.prices4{
+    background-color: lightyellow;
+    font-size: 16px;
+    text-align: center;
+}

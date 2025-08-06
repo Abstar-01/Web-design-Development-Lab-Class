@@ -1,0 +1,20 @@
+.content-container{
+    display: flex;
+    gap: 15px;
+    justify-content: space-around;
+}
+
+.content-container section{
+    flex-basis: 60%;
+    flex-grow: 2;
+}
+
+.sid{
+    flex-shrink: 0;
+    background-color: lightgreen;
+}
+
+.ads{
+    flex-grow: 1;
+    background-color: lightcoral;
+}

@@ -1,0 +1,43 @@
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: 
+    "header header header"
+    "project skills contact";
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.header {
+  grid-area: header;
+  grid-column: 1 / -1;
+  background-color: navy;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.project {
+  grid-area: project;
+}
+
+.skills {
+  grid-area: skills;
+}
+
+.contact {
+  grid-area: contact;
+}
+
+.skills-flex {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 0.5rem;
+}
+
+.badge {
+  background-color: #eee;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  font-weight: bold;
+}

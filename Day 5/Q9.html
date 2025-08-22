@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM Manipulation Exercise 2</title>
+</head>
+<body>
+  <button id="myButton">Toggle Text</button>
+  <p id="text">This is a paragraph to toggle.</p>
+
+  <script>
+    const button = document.getElementById("myButton");
+    const text = document.getElementById("text");
+
+    button.addEventListener("click", () => {
+      if (text.style.display === "none") {
+        text.style.display = "block";
+      } else {
+        text.style.display = "none";
+      }
+
+      console.log(text.style.display);
+    });
+  </script>
+</body>
+</html>

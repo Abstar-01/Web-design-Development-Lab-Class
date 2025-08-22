@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Final Combined Exercise</title>
+</head>
+<body>
+    <script>
+        class Employee {
+            constructor(name, role) {
+                this.name = name;
+                this.role = role;
+            }
+            introduce = () => `${this.name}, ${this.role}`;
+        }
+
+        function Department() {
+            this.employees = [];
+        }
+
+        Department.prototype.addEmployee = function (employee) {
+            this.employees.push(employee);
+        };
+
+        Department.prototype.listRoles = function () {
+            return this.employees.map(emp => emp.role);
+        };
+
+        const dept = new Department();
+
+        dept.addEmployee(new Employee("Alice", "Manager"));
+        dept.addEmployee(new Employee("Bob", "Developer"));
+        dept.addEmployee(new Employee("Eve", "Designer"));
+
+        dept.employees.forEach(function (emp) {
+            console.log(emp.introduce());
+        });
+
+        console.log(dept.listRoles());
+    </script>
+</body>
+</html>
